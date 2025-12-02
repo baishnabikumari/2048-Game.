@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>2048 Game By Baisu</title>
+    <link >
+</head>
+<body>
+    <div class="app">
+        <header class="top">
+            <h1 class="logo">2048</h1>
+
+            <div class="controls">
+                <button id="themeBtn" class="btn small" aria-label="Theme">🌙</button>
+                <div class="scores">
+                    <div class="score-box">
+                        <div class="label">Score</div>
+                        <div id="score">0</div>
+                    </div>
+                    <div class="score-box">
+                        <div class="label">Best Score</div> <!--Best Score will be shown if you ever refresh or restart the game anytime-->
+                        <div id="best">0</div>
+                    </div>
+                    <button id="newBtn" class="btn">New Game</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!--Board Wrap in center locked square-->
+            <div id="grid" class="grid" aria-hidden="true">
+                <div class="cell" data-r="0" data-c="0"></div><div class="cell" data-c="0" data-c="0"
+            </div>
+        </main>
+    </div>
+</body>
+</html>
