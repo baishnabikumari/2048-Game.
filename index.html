@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>2048 Game By Baisu</title>
-    <link >
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="app">
@@ -29,10 +29,26 @@
 
         <main>
             <!--Board Wrap in center locked square-->
-            <div id="grid" class="grid" aria-hidden="true">
-                <div class="cell" data-r="0" data-c="0"></div><div class="cell" data-c="0" data-c="0"
+            <section class="board-wrap">
+                <div id="grip" class="grid" aria-hidden="true">
+
+                </div>
+                <!--tiles container: absolute and very clean !-->
+                <div id="title" class="title" aria-hidden="false"></div>
+            </section>
+            <div id="overlay" class="overlay hidden">
+                <div class="overlay-card">
+                    <h2>Game Over</h2>
+                    <p>Your Score:- <span id="overlayScore"></span></p>
+                    <button id="retry" class="btn">Try A new GAME</button>
+                </div>
             </div>
         </main>
+        <footer class="foot">Made with ♥️ By Baisu For moonshot.hackclub.com </footer>
     </div>
+
+    <!--files fetch-->
+
+
 </body>
 </html>

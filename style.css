@@ -1,0 +1,27 @@
+:root{
+    --navy:#1E2A3E;
+    --soft-blue:#6A8DBA;
+    --mist:#9DBBDA;
+    --cream:#FFF4CC;
+    --peach:#fff;
+
+    --pad:11px;
+    --gap:7px;
+    --bg:linear-gradient(180deg, var(--mist),#e9f2fb 60%);
+    --text:var(--navy);
+    --tile-2:var(--cream);
+    --tile-4:var(--peach);
+    --glass:rgba(255,255,255,0.6);
+}
+:root.light{
+    --bg:linear-gradient(180deg,var(--cream),#fff 60%);
+    --text:var(--navy);
+    --cell:#f7efd9;
+    --glass:rgba(30,42,62,0.06);
+}
+:root.dark{
+    --bg: linear-gradient(180deg,#0f0f0f,#);
+    --text:#e7f0ff;
+    --cell:rgba(255,255,255,0.02);
+
+}
