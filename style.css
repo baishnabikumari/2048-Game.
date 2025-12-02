@@ -1,3 +1,5 @@
+/**ALL THE colors i used here is inspired by milkyway thanks.*/
+/** self created the color by seeing the milkyway site*/
 :root{
     --navy:#1E2A3E;
     --soft-blue:#6A8DBA;
@@ -23,5 +25,23 @@
     --bg: linear-gradient(180deg,#0f0f0f,#);
     --text:#e7f0ff;
     --cell:rgba(255,255,255,0.02);
+    --tile-2:#f7efd9;
+    --tile-4:#f6c88f; /*Milkyway inspired color*/
+    --glass:rgba(255,255,255,0.04);
+}
 
+/*Reset*/
+*{box-sizing:border-box;}
+html,body{height:100%;}
+body{
+    margin:0;
+    font-family:Inter,system-ui, -aaple-system, "Segoe UI", Roboto, "Helvetica Neue";
+    background:var(--bg);
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
 }
