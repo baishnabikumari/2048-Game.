@@ -5,7 +5,7 @@
     --soft-blue:#6A8DBA;
     --mist:#9DBBDA;
     --cream:#FFF4CC;
-    --peach:#fff;
+    --peach:#F6C88F;
 
     --pad:11px;
     --gap:7px;
@@ -16,15 +16,15 @@
     --glass:rgba(255,255,255,0.6);
 }
 :root.light{
-    --bg:linear-gradient(180deg,var(--cream),#fff 60%);
+    --bg:linear-gradient(180deg,var(--cream),#fff8e8 60%);
     --text:var(--navy);
     --cell:#f7efd9;
     --glass:rgba(30,42,62,0.06);
 }
 :root.dark{
-    --bg: linear-gradient(180deg,#0f0f0f,#);
+    --bg: linear-gradient(180deg,#162235 60%);
     --text:#e7f0ff;
-    --cell:rgba(255,255,255,0.02);
+    --cell:rgba(255,255,255,0.03);
     --tile-2:#f7efd9;
     --tile-4:#f6c88f; /*Milkyway inspired color*/
     --glass:rgba(255,255,255,0.04);
@@ -44,4 +44,32 @@ body{
     align-items:center;
     justify-content:center;
     padding:20px;
+}
+
+.app { /*app shell*/
+    width:100%;
+    max-width:720px;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+/*header*/
+.top {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.logo{
+    margin:0;
+    font-size:34px;
+    letter-spacing:2px;
+    font-weight:700;
+}
+
+/*controls*/
+.controls{
+    display:flex;
+    gap:12px;
+    align-items:center;
 }

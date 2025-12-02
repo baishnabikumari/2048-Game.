@@ -5,6 +5,15 @@
     const saved = localStorage.getItem('theme2048') || 'light';
 
     function apply(t){
-
+        root.classList.remove('light','dark');
+        root.classList.add(t);
+        themeBtn.textContent = t === 'dark' ? '🌙' : '🔆';
+        localStorage.setItem('theme2048', t);
     }
-})
+    themeBtn.addEventListener('click', () => {
+        const now = root.classList.contains('dark') ? 'dark' : (root.classList.contains('light') ? 'light' : saved);
+        apply(now === 'dark' ? 'light' : 'dark');
+    });
+
+    apply(saved);
+})();
