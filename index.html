@@ -1,54 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>2048 Game By Baisu</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>2048 — weekend build</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="app">
-        <header class="top">
-            <h1 class="logo">2048</h1>
+  <div class="app">
+    <header class="top">
+      <h1 class="logo">2048</h1>
 
-            <div class="controls">
-                <button id="themeBtn" class="btn small" aria-label="Theme">🌙</button>
-                <div class="scores">
-                    <div class="score-box">
-                        <div class="label">Score</div>
-                        <div id="score">0</div>
-                    </div>
-                    <div class="score-box">
-                        <div class="label">Best Score</div> <!--Best Score will be shown if you ever refresh or restart the game anytime-->
-                        <div id="best">0</div>
-                    </div>
-                    <button id="newBtn" class="btn">New Game</button>
-                </div>
-            </div>
-        </header>
+      <div class="controls">
+        <button id="themeBtn" class="btn small" aria-label="Theme">🌙</button>
+        <div class="scores">
+          <div class="score-box">
+            <div class="label">Score</div>
+            <div id="score">0</div>
+          </div>
+          <div class="score-box">
+            <div class="label">Best</div>
+            <!--Best Score will be shown if you ever refresh or restart the game anytime-->
+            <div id="best">0</div>
+          </div>
+          <button id="newBtn" class="btn">New Game</button>
+        </div>
+      </div>
+    </header>
 
-        <main>
-            <!--Board Wrap in center locked square-->
-            <section class="board-wrap">
-                <div id="grip" class="grid" aria-hidden="true">
+    <main>
+      <!--Board Wrap in center locked square-->
+      <section class="board-wrap">
+        <div id="grid" class="grid" aria-hidden="true">
+          <div class="cell" data-r="0" data-c="0"></div><div class="cell" data-r="0" data-c="1"></div><div class="cell" data-r="0" data-c="2"></div><div class="cell" data-r="0" data-c="3"></div>
+          <div class="cell" data-r="1" data-c="0"></div><div class="cell" data-r="1" data-c="1"></div><div class="cell" data-r="1" data-c="2"></div><div class="cell" data-r="1" data-c="3"></div>
+          <div class="cell" data-r="2" data-c="0"></div><div class="cell" data-r="2" data-c="1"></div><div class="cell" data-r="2" data-c="2"></div><div class="cell" data-r="2" data-c="3"></div>
+          <div class="cell" data-r="3" data-c="0"></div><div class="cell" data-r="3" data-c="1"></div><div class="cell" data-r="3" data-c="2"></div><div class="cell" data-r="3" data-c="3"></div>
+        </div>
 
-                </div>
-                <!--tiles container: absolute and very clean !-->
-                <div id="title" class="title" aria-hidden="false"></div>
-            </section>
-            <div id="overlay" class="overlay hidden">
-                <div class="overlay-card">
-                    <h2>Game Over</h2>
-                    <p>Your Score:- <span id="overlayScore"></span></p>
-                    <button id="retry" class="btn">Try A new GAME</button>
-                </div>
-            </div>
-        </main>
-        <footer class="foot">Made with ♥️ By Baisu For milkyway.hackclub.com </footer> <!-- By mistake i wrote moonshot instead of milkyway sooooo soryyy !-->
-    </div>
+        <!--tiles container: absolute and very clean !-->
+        <div id="tiles" class="tiles" aria-hidden="false"></div>
+      </section>
 
-    <!--files fetch-->
-    <script src="./theme.js"></script>
-    <script src="./game_s-logic.js"></script>
+      <div id="overlay" class="overlay hidden">
+        <div class="overlay-card">
+          <h2>Game Over</h2>
+          <p>Your score: <span id="overlayScore">0</span></p>
+          <button id="retry" class="btn">Try Again</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="foot">Made with ♥️ By Baisu For milkyway.hackclub.com </footer>
+    <!-- By mistake i wrote moonshot instead of milkyway sooooo soryyy !-->
+  </div>
+
+  <!--files fetch-->
+  <script src="./theme.js"></script>
+  <script src="./game_s-logic.js"></script>
 </body>
 </html>
