@@ -36,4 +36,7 @@ Works on:
 - Mobile browsers and more.
 
 
+## videos and ss
 
+<img width="1440" height="772" alt="Screenshot 2025-12-05 at 1 40 19 AM" src="https://github.com/user-attachments/assets/b780285d-cc0c-472d-aa5d-c438ab6a5aa0" />
+<img width="1440" height="770" alt="Screenshot 2025-12-05 at 1 39 42 AM" src="https://github.com/user-attachments/assets/9efe3898-9b67-4b5b-88b9-58fb0a314c04" />
